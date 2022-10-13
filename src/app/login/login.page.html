@@ -11,7 +11,7 @@
       <h1>Ingresar</h1>
       <p>Inicie sesión para continuar</p>
     </div>
-    
+
     <ion-row>
       <ion-col>
         <ion-list>
@@ -24,8 +24,8 @@
             <ion-input color="primary" type="password"></ion-input>
           </ion-item>
         </ion-list>
-        <ion-button expand="block" >Login</ion-button>
-        <ion-button expand="block" color="success">Registarse</ion-button>
+        <ion-button expand="block" routerLink="/principal" routerDirection="back" (click)="Mensaje()">Login</ion-button>
+        <ion-button expand="block" routerLink="/registro" routerDirection="back" (click)="Mensaje()"color="success">Registarse</ion-button>
       </ion-col>
     </ion-row>
 

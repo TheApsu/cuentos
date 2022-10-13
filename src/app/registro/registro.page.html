@@ -1,9 +1,38 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>registro</ion-title>
-  </ion-toolbar>
+    <ion-title>Registrarse</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
 
+    <div class="ion-margin-bottom ion-text-center">
+      <h1>Registrarse</h1>
+      <p>Ingrese su informacion para btener acceso</p>
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item fill="outline" class="ion-margin-bottom">
+            <ion-label color="primary" position="floating">Correo electrónico</ion-label>
+            <ion-input color="primary"></ion-input>
+          </ion-item>
+          <ion-item fill="outline" class="ion-margin-bottom">
+            <ion-label color="primary" position="floating">Contraseña</ion-label>
+            <ion-input color="primary" type="password"></ion-input>
+          </ion-item>
+        </ion-list>
+        <ion-button expand="block" (click)="Mensaje()">Registrar</ion-button>
+        <ion-button expand="block" color="success" routerLink="/login" routerDirection="back" >Cancelar</ion-button>
+      </ion-col>
+    </ion-row>
+
+    
+
+  </ion-grid>
 </ion-content>
