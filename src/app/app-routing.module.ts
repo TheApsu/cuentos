@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'cuentos',
     loadChildren: () => import('./cuentos/cuentos.module').then( m => m.CuentosPageModule)
+  },  {
+    path: 'visor',
+    loadChildren: () => import('./visor/visor.module').then( m => m.VisorPageModule)
   },
+
 ];
 
 @NgModule({

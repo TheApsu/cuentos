@@ -1,9 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>principal</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <ion-button (click)="presentAlert()">Click Me</ion-button>
+  <ion-grid>
+
+    <div class="ion-margin-bottom ion-text-center">
+      <h1>Los Cuentos de Patty</h1>
+    </div>
+
+    <ion-card color="primary" routerLink="/cuentos" routerDirection="back">
+      <ion-card-header>
+        <ion-card-title>Cuentos</ion-card-title>
+        <ion-card-subtitle>Un listado de Cuentos, para leer.</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    
+    <ion-card color="secondary" routerLink="/videos" routerDirection="back">
+      <ion-card-header>
+        <ion-card-title>Videos</ion-card-title>
+        <ion-card-subtitle>Una serie de videos para disfrutar</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    
+  </ion-grid>
 </ion-content>
