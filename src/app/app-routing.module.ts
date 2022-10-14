@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'visor',
     loadChildren: () => import('./visor/visor.module').then( m => m.VisorPageModule)
   },
+  {
+    path: 'reproductor',
+    loadChildren: () => import('./reproductor/reproductor.module').then( m => m.ReproductorPageModule)
+  },
 
 ];
 

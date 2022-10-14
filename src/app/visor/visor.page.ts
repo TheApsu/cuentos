@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DocumentViewer } from '@awesome-cordova-plugins/document-viewer/ngx';
 
 @Component({
   selector: 'app-visor',
@@ -8,15 +7,9 @@ import { DocumentViewer } from '@awesome-cordova-plugins/document-viewer/ngx';
 })
 export class VisorPage implements OnInit {
 
-  constructor(private document: DocumentViewer) { }
+  constructor() { }
 
   ngOnInit() {
-
-    const options = {
-       title: 'My PDF'
-     }
-    
-    this.document.viewDocument('assets/myFile.pdf', 'application/pdf', options)
   }
 
   
