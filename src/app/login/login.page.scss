@@ -1,0 +1,26 @@
+ion-content{
+    --background: var(--Azul);
+}
+
+ion-list{
+    background: var(--Azul)
+}
+
+.cab-login{
+    padding-top: 4rem;
+    color: #fff;
+}
+
+.cab-login > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cab-login > p {
+    font-size: 1.3rem;
+}
+
+.foo-login{
+    padding-top: 2rem;
+    color: #fff;  
+}

@@ -75,7 +75,15 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  --ion-font-family: 'ReallyFree';
+  ion-title{
+    font-family: StarBlast;
+  }
+
+  ion-content {
+    --background: url(https://global.discourse-cdn.com/ionicframework/original/3X/1/6/16b525dddb3c9193b6a469ce3d596b3d79a0923f.png);
+  }
+
+  --Azul: #38b6ff;
 }
 
 @media (prefers-color-scheme: dark) {
