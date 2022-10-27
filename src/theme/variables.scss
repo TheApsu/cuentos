@@ -80,8 +80,13 @@
   }
 
   ion-content {
-    --background: url(https://global.discourse-cdn.com/ionicframework/original/3X/1/6/16b525dddb3c9193b6a469ce3d596b3d79a0923f.png);
+    //--background: url(https://global.discourse-cdn.com/ionicframework/original/3X/1/6/16b525dddb3c9193b6a469ce3d596b3d79a0923f.png);
+    --background: var(--Azul);
   }
+
+  ion-toolbar{
+    --background: var(--Azul);
+}
 
   --Azul: #38b6ff;
 }
