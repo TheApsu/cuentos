@@ -10,15 +10,21 @@ import { environment } from 'src/environments/environment';
 })
 export class CuentosPage implements OnInit {
 
+  items = []
+
   constructor(
     private servicio: ServicioService,
   ) { }
 
   ngOnInit() {
     this.servicio.ConsultarCuentos().subscribe((res) => {
-      console.log(res);
+      this.items = res;
+      console.log(res)
     });
+
+    
   }
+
 
 
 

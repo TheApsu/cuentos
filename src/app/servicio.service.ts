@@ -5,7 +5,10 @@ import { catchError, tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 
 export interface ApiResult {
-  page: number;
+  titulo: string,
+  descripcion: string,
+  enlace: string,
+  miniatura: string,
 }
 
 @Injectable({
@@ -15,9 +18,9 @@ export class ServicioService {
 
   constructor(private http: HttpClient) { }
 
-  ConsultarCuentos(): Observable<any> {
-    return this.http.get<ApiResult>(
-      `${environment.baseUrl}`
+  ConsultarCuentos(): Observable<ApiResult[]> {
+    return this.http.get<ApiResult[]>(
+      `${environment.baseUrl}/pdf`
     );
   }
 }
