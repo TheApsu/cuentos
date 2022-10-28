@@ -30,7 +30,7 @@ export class CuentosPage implements OnInit {
   async showLoading() {
     const loading = await this.loadingCtrl.create({
       message: 'Cargando...',
-      duration: 3000,
+      duration: 2000,
       cssClass: 'custom-loading',
     });
 

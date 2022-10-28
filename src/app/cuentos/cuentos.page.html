@@ -10,13 +10,13 @@
 
 <ion-content>
   <ion-grid>
-    <ion-card *ngFor="let item of items; trackBy:trackItems" color="primary" routerLink="/visor" routerDirection="back">
+    <ion-card *ngFor="let item of items;" color="primary" routerLink="/visor/{{item.enlace}}" routerDirection="back">
       <ion-card-header>
-        <ion-card-title>Titulo Cuento</ion-card-title>
+        <ion-card-title>{{item.titulo}}</ion-card-title>
       </ion-card-header>
     
       <ion-card-content>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        {{item.descripcion}}
       </ion-card-content>
     </ion-card>
     
