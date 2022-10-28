@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://sitiodepruebaproyecto.000webhostapp.com/cuentos',
+  baseUrl: 'https://my-json-server.typicode.com/Jose-Mena/json',
 };
 
 /*

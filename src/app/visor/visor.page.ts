@@ -15,9 +15,10 @@ export class VisorPage implements OnInit {
   
 
   constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer) { }
-
+  titulo = "Titulo";
+  
   ngOnInit() {
-    
+    this.titulo = this.route.snapshot.paramMap.get('titulo');
   }
 
   traerUrl(){

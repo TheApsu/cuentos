@@ -10,26 +10,18 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <ion-card color="primary" routerLink="/reproductor" routerDirection="back">
+      
+      <ion-col *ngFor="let item of items;" >
+        <ion-card color="primary" routerLink="/reproductor/{{item.enlace}}/{{item.titulo}}" routerDirection="back">
           <ion-card-content>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            {{item.descripcion}}
           </ion-card-content>
           <ion-card-header>
-            <ion-card-title>Titulo Video</ion-card-title>
+            <ion-card-title>{{item.titulo}}</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col>
-        <ion-card color="primary" routerLink="/reproductor" routerDirection="back">       
-          <ion-card-content>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </ion-card-content>
-          <ion-card-header>
-            <ion-card-title>Titulo Video</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
+
     </ion-row>
   </ion-grid>
 </ion-content>

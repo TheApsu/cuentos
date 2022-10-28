@@ -10,7 +10,7 @@
 
 <ion-content>
   <ion-grid>
-    <ion-card *ngFor="let item of items;" color="primary" routerLink="/visor/{{item.enlace}}" routerDirection="back">
+    <ion-card *ngFor="let item of items;" color="primary" routerLink="/visor/{{item.enlace}}/{{item.titulo}}" routerDirection="back">
       <ion-card-header>
         <ion-card-title>{{item.titulo}}</ion-card-title>
       </ion-card-header>

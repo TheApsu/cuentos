@@ -15,12 +15,19 @@ export interface ApiResult {
   providedIn: 'root'
 })
 export class ServicioService {
+  
 
   constructor(private http: HttpClient) { }
 
   ConsultarCuentos(): Observable<ApiResult[]> {
     return this.http.get<ApiResult[]>(
       `${environment.baseUrl}/pdf`
+    );
+  }
+
+  ConsultarVideos(): Observable<ApiResult[]> {
+    return this.http.get<ApiResult[]>(
+      `${environment.baseUrl}/videos`
     );
   }
 }

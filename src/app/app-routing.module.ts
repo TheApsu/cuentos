@@ -32,11 +32,11 @@ const routes: Routes = [
     loadChildren: () => import('./cuentos/cuentos.module').then( m => m.CuentosPageModule)
   },
   {
-    path: 'visor/:id',
+    path: 'visor/:id/:titulo',
     loadChildren: () => import('./visor/visor.module').then( m => m.VisorPageModule)
   },
   {
-    path: 'reproductor',
+    path: 'reproductor/:id/:titulo',
     loadChildren: () => import('./reproductor/reproductor.module').then( m => m.ReproductorPageModule)
   },
 
