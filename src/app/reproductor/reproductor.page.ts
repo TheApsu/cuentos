@@ -19,7 +19,7 @@ export class ReproductorPage implements OnInit {
 
   traerUrl(){
     let a = this.route.snapshot.paramMap.get('id');
-    return this.sanitizer.bypassSecurityTrustResourceUrl('https://sitiodepruebaproyecto.000webhostapp.com/cuentos/videos/'+a);
+    return this.sanitizer.bypassSecurityTrustResourceUrl(a);
   }
 
 }
