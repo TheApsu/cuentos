@@ -4,7 +4,7 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: var(--btnPrimario);
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -28,7 +28,7 @@
   --ion-color-tertiary-tint: #6370ff;
 
   /** success **/
-  --ion-color-success: #2dd36f;
+  --ion-color-success: var(--btnSecundario);
   --ion-color-success-rgb: 45, 211, 111;
   --ion-color-success-contrast: #ffffff;
   --ion-color-success-contrast-rgb: 255, 255, 255;
@@ -81,14 +81,21 @@
   
   ion-content {
     //--background: url(https://global.discourse-cdn.com/ionicframework/original/3X/1/6/16b525dddb3c9193b6a469ce3d596b3d79a0923f.png);
-    --background: var(--Azul);
+    --background: var(--Fondo);
   }
 
   ion-toolbar{
-    --background: var(--Azul);
-}
+    --background: var(--Banner);
+  }
 
-  --Azul: #38b6ff;
+  --Fondo: #A0DBF2;
+  --Banner: #F2DE77;
+  --Letra: #260801;
+  --btnSecundario: #8C3604;
+  --btnPrimario: #F29BB2;
+
+
+
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,10 +1,10 @@
 ion-list{
-    background: var(--Azul)
+    background: var(--Fondo)
 }
 
 .cab-login{
     padding-top: 4rem;
-    color: #fff;
+    color: var(--Letra);
 }
 
 .cab-login > h1 {
@@ -18,5 +18,9 @@ ion-list{
 
 .foo-login{
     padding-top: 2rem;
-    color: #fff;  
+    color: var(--Letra);
+}
+
+ion-label{
+    color: var(--Letra);
 }
