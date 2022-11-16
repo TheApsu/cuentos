@@ -13,12 +13,11 @@
       
       <ion-col *ngFor="let item of items;" >
         <ion-card color="primary" routerLink="/reproductor/{{item.enlace}}/{{item.titulo}}" routerDirection="back">
-          <ion-card-content>
-            {{item.descripcion}}
-          </ion-card-content>
           <ion-card-header>
-            <ion-card-title>{{item.titulo}}</ion-card-title>
+            <ion-img src="../../assets/img/logo.png" alt=""></ion-img>
+            <ion-card-title>{{item.titulo}}<ion-icon name="play-circle-outline"></ion-icon></ion-card-title>
           </ion-card-header>
+          <ion-card-content>{{item.descripcion}}</ion-card-content>
         </ion-card>
       </ion-col>
 

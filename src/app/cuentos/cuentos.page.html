@@ -11,13 +11,23 @@
 <ion-content>
   <ion-grid>
     <ion-card *ngFor="let item of items;" color="primary" routerLink="/visor/{{item.enlace}}/{{item.titulo}}" routerDirection="back">
-      <ion-card-header>
-        <ion-card-title>{{item.titulo}}</ion-card-title>
-      </ion-card-header>
-    
-      <ion-card-content>
-        {{item.descripcion}}
-      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-card-header>
+            <ion-card-title>{{item.titulo}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+           
+            {{item.descripcion}}
+          </ion-card-content>
+        </ion-col>
+        <ion-col>
+          <h1 class="ion-text-center">
+            <ion-icon name="library-outline"></ion-icon>
+          </h1>
+        </ion-col>
+      </ion-row>
     </ion-card>
     
 

@@ -85,16 +85,20 @@
   }
 
   ion-toolbar{
-    --background: var(--Banner);
+    --background: var(--FondoStrong);
+    color: var(--btnPrimario);
+    -webkit-text-stroke: .08rem var(--Letra);
+    font-size: 3rem;
   }
 
+  --btnPrimario: #F29BB2;
   --Fondo: #A0DBF2;
   --Banner: #F2DE77;
-  --Letra: #260801;
   --btnSecundario: #8C3604;
-  --btnPrimario: #F29BB2;
+  --Letra: #260801;
 
-
+  --LetraLight: #503239;
+  --FondoStrong: #8bbccf;
 
 }
 

@@ -22,17 +22,17 @@ export class VideosPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.showLoading()
+    
     this.servicio.ConsultarVideos().subscribe((res) => {
       this.items = res;
-      console.log(res)
+      this.showLoading()
     });
   }
 
   async showLoading() {
     const loading = await this.loadingCtrl.create({
       message: 'Cargando...',
-      duration: 2000,
+      duration: 1000,
       cssClass: 'custom-loading',
     });
 
