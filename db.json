@@ -4,7 +4,7 @@
             "titulo": "Jesús es el camino",
             "descripcion": "Patty es una niña feliz, que ama a su mascota King. King, es un perro travieso, que menea la cola cuando camina; persigue ardillas y ladra mucho...",
             "enlace": "pdf1.html",
-            "miniatura": "img",
+            "miniatura": "img"
           
         },
         {
@@ -112,6 +112,33 @@
             "descripcion": "DESCRIPCION ........",
             "enlace": "https://www.google.com/",
             "miniatura": "img"
+        }
+    ],
+    "audiosDuration": [
+        {
+            "pdfName": "Jesús es el camino",
+            "data": [
+                {
+                    "page:": 2,
+                    "init": 0,
+                    "end": 2
+                },
+                {
+                    "page:": 3,
+                    "init": 2,
+                    "end": 28
+                },
+                {
+                    "page:": 3,
+                    "init": 28,
+                    "end": 49
+                },
+                {
+                    "page:": 4,
+                    "init": 28,
+                    "end": 49
+                }
+            ]
         }
     ]
 }
