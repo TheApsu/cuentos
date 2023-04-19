@@ -1,0 +1,116 @@
+{
+    "pdf": [
+        {
+            "titulo": "Jesús es el camino",
+            "descripcion": "Patty es una niña feliz, que ama a su mascota King. King, es un perro travieso, que menea la cola cuando camina; persigue ardillas y ladra mucho...",
+            "enlace": "pdf1.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "La Samaritana",
+            "descripcion": "Patty y sus amigos, disfrutaban de un maravilloso fin de semana en la casa de Patón; y decidieron hacer una fogata...",
+            "enlace": "pdf2.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Lázaro",
+            "descripcion": "Patty, estaba muy feliz; jugando con su mascota King, ella lanzaba un frisbee al aire y este lo agarraba. De repente, a...",
+            "enlace": "pdf3.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Talita Cumi",
+            "descripcion": "En un día soleado, Patty y sus amigos estaban de paseo en la playa. Patón, Jane y Vicky construían un castillo de arena, mientras...",
+            "enlace": "pdf4.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Un Sueño de Milagro",
+            "descripcion": "Patty, celebraba el cumpleaños de su mascota King. Sus amigos Patón, Jane y Vicky, habían traído dulces y galletas para compartir...",
+            "enlace": "pdf5.html",
+            "miniatura": "img"
+        }
+    ],
+    "videos": [
+        {
+            "titulo": "Video 1",
+            "descripcion": "",
+            "enlace": "video1.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 2",
+            "descripcion": "",
+            "enlace": "video2.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 3",
+            "descripcion": "",
+            "enlace": "video3.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 4",
+            "descripcion": "",
+            "enlace": "video4.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 5",
+            "descripcion": "",
+            "enlace": "video5.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 6",
+            "descripcion": "",
+            "enlace": "video6.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 7",
+            "descripcion": "",
+            "enlace": "video7.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 8",
+            "descripcion": "",
+            "enlace": "video8.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 9",
+            "descripcion": "",
+            "enlace": "video9.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 10",
+            "descripcion": "",
+            "enlace": "video10.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 11",
+            "descripcion": "",
+            "enlace": "video11.html",
+            "miniatura": "img"
+        },
+        {
+            "titulo": "Video 12",
+            "descripcion": "",
+            "enlace": "video12.html",
+            "miniatura": "img"
+        }
+    ],
+    "juegos": [
+        {
+            "titulo": "Juego 1",
+            "descripcion": "DESCRIPCION ........",
+            "enlace": "https://www.google.com/",
+            "miniatura": "img"
+        }
+    ]
+}
