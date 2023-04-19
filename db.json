@@ -5,28 +5,7 @@
             "descripcion": "Patty es una niña feliz, que ama a su mascota King. King, es un perro travieso, que menea la cola cuando camina; persigue ardillas y ladra mucho...",
             "enlace": "pdf1.html",
             "miniatura": "img",
-            "chapterDuration": [
-                {
-                    "page:": 2,
-                    "init": 0,
-                    "end": 2
-                },
-                {
-                    "page:": 3,
-                    "init": 2,
-                    "end": 28
-                },
-                {
-                    "page:": 3,
-                    "init": 28,
-                    "end": 49
-                },
-                {
-                    "page:": 4,
-                    "init": 28,
-                    "end": 49
-                }
-            ]
+          
         },
         {
             "titulo": "La Samaritana",
