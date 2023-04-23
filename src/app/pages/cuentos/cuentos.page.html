@@ -1,0 +1,10 @@
+<ion-content class="default-bg">
+  <app-header></app-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" *ngFor="let item of items;">
+        <app-stories [data]="item"></app-stories>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

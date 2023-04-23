@@ -1,0 +1,17 @@
+<ion-tabs>
+  <ion-tab-bar class="tab-bar" slot="bottom">
+    <ion-tab-button class="tab-btn" tab="principal">
+      <ion-icon class="icon" [name]="homeIcon"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+    <ion-tab-button class="tab-btn" tab="principal" (click)="openPaypal()">
+      <ion-icon class="icon" name="logo-paypal"></ion-icon>
+      <ion-label text-wrap>Pagos por paypal cada tres meses</ion-label>
+      <ion-badge class="badge-paypal" mode="ios">$1.99</ion-badge>
+    </ion-tab-button>
+    <ion-tab-button class="tab-btn" tab="profile">
+      <ion-icon class="icon" [name]="userIcon"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

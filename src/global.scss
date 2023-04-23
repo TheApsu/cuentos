@@ -24,3 +24,108 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+*{
+  font-family: 'Rammetto One' !important;
+  -webkit-text-stroke: .08rem var(--letra) !important;
+
+}
+
+.default-bg{
+  --background: var(--Fondo);
+  background: var(--Fondo);
+  background-color: var(--Fondo);
+}
+
+.paypal-component{
+  --height: 40%;
+  --width: 90%;
+  --border-radius: .5rem;
+}
+
+.max-hg{
+  height: 100%;
+}
+
+.toastSv{
+  color: #fff;
+}
+
+.input-bg{
+  --background: #c8c0e7;
+  background: #c8c0e7;
+}
+
+.alert-modal{
+  --background: #fff
+}
+
+.transparent{
+  --background: transparent;
+  background: transparent;
+}
+
+.principal-btn{
+  --box-shadow: none;
+  --border-radius: .5rem;
+  --padding-top: 1.5rem;
+  --padding-bottom: 1.5rem;
+  --background: #c8c0e7;
+  --color: var(--letra);
+  color: var(--letra);
+  width: 85%;
+  margin: auto;
+  text-transform: none;
+  font-size: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.default-font-color{
+  --color: var(--letra);
+  color: var(--letra);
+}
+
+.secondary-btn{
+  text-decoration: underline;
+  --color: var(--letra);
+}
+
+.no-shadow{
+  --box-shadow: none;
+  box-shadow: none;
+}
+
+.item-login{
+  margin-bottom: 1.3rem;
+  .item-login_label{
+    transform: translateY(-0%) scale(1) translateX(.5rem);
+    margin-bottom: .5rem;
+    color: #fff !important;
+    font-size: .8rem;
+    font-family: 'Rammetto One';
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .item-login_input.ion-invalid.ion-touched{
+    border-color: #f00;
+  } 
+  .item-login_input{
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: border-color .3s ease;
+    --padding-start: 1rem;
+    --padding-end: 1rem;
+    --color: #000;
+    --background: #c8c0e7;
+    --border-radius: 1rem;
+    --padding-bottom: 1rem;
+    --padding-top: 1rem;
+  }
+}
+
+ion-content{
+  --background: #fff;
+}

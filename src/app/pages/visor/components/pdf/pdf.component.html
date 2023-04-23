@@ -1,0 +1,32 @@
+<div class="pager">
+  <ion-buttons>
+    <ion-button (click)="getData()">
+      <ion-icon slot="icon-only" name="refresh-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons >
+    <ion-button (click)="nextPage(false)">
+      <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-label text-wrap>
+    {{ pageNum }} / {{ totalPages }}
+  </ion-label>
+  <ion-buttons>
+    <ion-button (click)="nextPage(true)">
+      <ion-icon slot="icon-only" name="chevron-forward"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</div>
+<div class="canvas">
+  <canvas #theCanvas></canvas>
+</div>
+
+<!-- <audio
+  *ngIf="audioUrl"
+  controls 
+  (timeupdate)="checkTime($event)"
+  #storieAudio 
+  preload="none" 
+  [src]="audioUrl"
+></audio> -->

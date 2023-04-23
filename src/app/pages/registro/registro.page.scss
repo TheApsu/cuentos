@@ -1,0 +1,45 @@
+.row-back-btn{
+  padding: 3rem 1rem;
+}
+
+.row-container-register{
+  border-radius: 4rem 1rem 0 0;
+  .col-b{
+    margin-top: 1rem;
+  }
+  .cab-login{
+    margin: auto; 
+    padding: 0.5rem 1.5rem;
+
+    .register-title{
+      font-weight: 800;
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 0;
+    }
+    
+    .has-account-btn{
+      font-size: .7rem;
+      white-space: break-spaces;
+      color: #fff;
+      margin: 0;
+    }
+  }
+  .col-form{
+    padding: 0.5rem 1.5rem;
+    .register-btn{
+      --color: #fff;
+      --box-shadow: none;
+      --border-radius: .5rem;
+      --padding-top: 1.5rem;
+      --padding-bottom: 1.5rem;
+      border-radius: .5rem;
+      width: 85%;
+      margin: auto;
+      text-transform: none;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+  }
+}

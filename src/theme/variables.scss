@@ -3,8 +3,17 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --yellow-color: #d8bc1c;
+  --btnPrimario: #F29BB2;
+  --Fondo: #a593e5;
+  --Banner: #F2DE77;
+  --btnSecundario: #8C3604;
+  --letra: #272727;
+
+  --letraLight: #503239;
+  --FondoStrong: #8bbccf;
   /** primary **/
-  --ion-color-primary: var(--btnPrimario);
+  --ion-color-primary: var(--Fondo);
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -79,26 +88,14 @@
     font-family: StarBlast;
   }
   
-  ion-content {
-    //--background: url(https://global.discourse-cdn.com/ionicframework/original/3X/1/6/16b525dddb3c9193b6a469ce3d596b3d79a0923f.png);
-    --background: var(--Fondo);
-  }
-
   ion-toolbar{
     --background: var(--FondoStrong);
     color: var(--btnPrimario);
-    -webkit-text-stroke: .08rem var(--Letra);
+    -webkit-text-stroke: .08rem var(--letra);
     font-size: 3rem;
   }
 
-  --btnPrimario: #F29BB2;
-  --Fondo: #A0DBF2;
-  --Banner: #F2DE77;
-  --btnSecundario: #8C3604;
-  --Letra: #260801;
-
-  --LetraLight: #503239;
-  --FondoStrong: #8bbccf;
+ 
 
 }
 
@@ -109,7 +106,7 @@
    */
 
   body {
-    --ion-color-primary: #428cff;
+    --ion-color-primary: var(--Fondo);
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -194,8 +191,8 @@
     --ion-color-step-350: #595959;
     --ion-color-step-400: #666666;
     --ion-color-step-450: #737373;
-    --ion-color-step-500: #808080;
-    --ion-color-step-550: #8c8c8c;
+    --ion-color-step-500: #fff;
+    --ion-color-step-550: #fff;
     --ion-color-step-600: #999999;
     --ion-color-step-650: #a6a6a6;
     --ion-color-step-700: #b3b3b3;
@@ -241,7 +238,7 @@
     --ion-color-step-400: #717171;
     --ion-color-step-450: #7d7d7d;
     --ion-color-step-500: #898989;
-    --ion-color-step-550: #949494;
+    --ion-color-step-550: #fff;
     --ion-color-step-600: #a0a0a0;
     --ion-color-step-650: #acacac;
     --ion-color-step-700: #b8b8b8;

@@ -1,0 +1,13 @@
+<ion-content class="default-bg">
+  <app-header></app-header>
+  <ion-buttons class="ion-margin">
+    <ion-button class="back-btn" (click)="back()" fill="outline">
+      <ion-icon slot="start" name="arrow-back"></ion-icon>
+      Retroceder
+    </ion-button>
+  </ion-buttons>
+  
+  <h2 class="title"> {{ titulo }} </h2>
+
+  <iframe [src]="url | domSanitizer:id"  style="width:100%;height:100%" scrolling="yes" ></iframe>
+</ion-content>

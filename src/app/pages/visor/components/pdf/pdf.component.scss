@@ -1,0 +1,13 @@
+.pager{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.canvas{
+  padding: .5rem;
+  canvas{
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}

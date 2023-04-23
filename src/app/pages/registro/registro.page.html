@@ -1,0 +1,88 @@
+<ion-content>
+  <ion-grid class="max-hg ion-no-padding">
+    <ion-row class="row-back-btn">
+      <ion-buttons class="default-font-color">
+        <ion-button routerLink="/login" routerDirection="back">
+          <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-row>
+    <ion-row class="row-container-register default-bg max-hg">
+      <ion-col size="12" class="col-b">
+        <div class="ion-margin-bottom ion-text-center cab-login">
+          <h2 class="register-title">Crea tu nueva cuenta</h2>
+          <ion-button 
+            class="has-account-btn secondary-btn" 
+            (click)="hasAccount()" 
+            expand="block" 
+            fill="clear"
+          >
+            ¿Ya tienes una cuenta? Inicia sesión aquí
+          </ion-button>
+        </div>
+      </ion-col>
+      <ion-col class="col-form">
+        <form action="" [formGroup]="registerForm">
+          <ion-list class="transparent">
+            <ion-item 
+              lines="none" 
+              class="ion-margin-bottom transparent item-login default-font-color"
+            >
+              <ion-label 
+                class="item-login_label" 
+                position="stacked"
+              >
+                Nombre
+              </ion-label>
+              <ion-input formControlName="name" type="name" class="item-login_input input-bg"></ion-input>
+            </ion-item>
+            <ion-item 
+              lines="none" 
+              class="ion-margin-bottom transparent item-login"
+            >
+              <ion-label 
+                class="item-login_label" 
+                position="stacked"
+              >
+                Correo electrónico
+              </ion-label>
+              <ion-input formControlName="email" type="email" class="item-login_input input-bg"></ion-input>
+            </ion-item>
+            <ion-item 
+              lines="none" 
+              class="ion-margin-bottom transparent item-login"
+            >
+              <ion-label 
+                class="item-login_label" 
+                position="stacked"
+              >
+                Contraseña
+              </ion-label>
+              <ion-input formControlName="password" type="password" class="item-login_input input-bg"></ion-input>
+            </ion-item>
+            <ion-item 
+              lines="none" 
+              class="ion-margin-bottom transparent item-login"
+            >
+              <ion-label 
+                class="item-login_label" 
+                position="stacked"
+              >
+                Fecha de nacimiento
+              </ion-label>
+              <ion-input formControlName="dateOfBirth" type="date" class="item-login_input input-bg"></ion-input>
+            </ion-item>
+          </ion-list>
+          <ion-button 
+            expand="block" 
+            [disabled]="registerForm.invalid"
+            (click)="register()"
+            class="register-btn input-bg"
+          >
+            Registrarme
+          </ion-button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

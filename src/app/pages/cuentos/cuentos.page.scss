@@ -1,0 +1,24 @@
+ion-card{
+    border: solid .04rem var(--letra);
+    -webkit-box-shadow: 7px 10px 8px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 8px -6px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 8px -6px rgba(0,0,0,0.75);
+  }
+  
+ion-card-header ion-card-title{
+    color: var(--FondoStrong);
+    font-family: StarBlast;
+    font-size: 1.5rem;
+    -webkit-text-stroke: .08rem var(--letra);
+}
+
+ion-card-header ion-card-subtitle, ion-card-content{
+    color: var(--letraLight);
+    font-size: 0.9rem;
+}
+
+ion-icon{
+    font-size: 5rem;
+    color: var(--letra);
+}
+

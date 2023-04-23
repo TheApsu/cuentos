@@ -1,44 +1,35 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
-  },
-  {
-    path: 'principal',
-    loadChildren: () => import('./principal/principal.module').then( m => m.PrincipalPageModule)
+    path: 'recovery',
+    loadChildren: () => import('./pages/recovery-password/recovery-password.module').then( m => m.RecoveryPasswordPageModule),
+    canActivate: [ AuthGuard ]
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule),
+    canActivate: [ AuthGuard ]
   },
   {
     path: 'registro',
-    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule),
+    canActivate: [ AuthGuard ]
   },
   {
-    path: 'videos',
-    loadChildren: () => import('./videos/videos.module').then( m => m.VideosPageModule)
+    path: 'tab',
+    loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
   },
   {
-    path: 'cuentos',
-    loadChildren: () => import('./cuentos/cuentos.module').then( m => m.CuentosPageModule)
+    path: '**',
+    redirectTo: 'login',
+    pathMatch: 'full'
   },
-  {
-    path: 'visor/:id/:titulo',
-    loadChildren: () => import('./visor/visor.module').then( m => m.VisorPageModule)
-  },
-  {
-    path: 'reproductor/:id/:titulo',
-    loadChildren: () => import('./reproductor/reproductor.module').then( m => m.ReproductorPageModule)
-  },
+ 
+
+
 
 ];
 

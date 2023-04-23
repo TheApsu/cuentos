@@ -1,0 +1,75 @@
+
+<ion-content class="default-bg">
+  <app-header></app-header>
+  <form action="" [formGroup]="registerForm" class="ion-text-center">
+    <ion-list class="transparent">
+      <ion-item 
+        lines="none" 
+        class="ion-margin-bottom transparent item-login default-font-color"
+      >
+        <ion-label 
+          class="item-login_label" 
+          position="stacked"
+        >
+          Nombre
+        </ion-label>
+        <ion-input formControlName="name" type="name" class="item-login_input input-bg"></ion-input>
+      </ion-item>
+      <!-- <ion-item 
+        lines="none" 
+        class="ion-margin-bottom transparent item-login"
+      >
+        <ion-label 
+          class="item-login_label" 
+          position="stacked"
+        >
+          Correo electrónico
+        </ion-label>
+        <ion-input formControlName="email" type="email" class="item-login_input input-bg"></ion-input>
+      </ion-item> -->
+      <!-- <ion-item 
+        lines="none" 
+        class="ion-margin-bottom transparent item-login"
+      >
+        <ion-label 
+          class="item-login_label" 
+          position="stacked"
+        >
+          Contraseña
+        </ion-label>
+        <ion-input formControlName="password" type="password" class="item-login_input input-bg"></ion-input>
+      </ion-item> -->
+      <ion-item 
+        lines="none" 
+        class="ion-margin-bottom transparent item-login"
+      >
+        <ion-label 
+          class="item-login_label" 
+          position="stacked"
+        >
+          Fecha de nacimiento
+        </ion-label>
+        <ion-input formControlName="dateOfBirth" type="date" class="item-login_input input-bg"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button 
+      [disabled]="registerForm.invalid"
+      (click)="updateUser()"
+      class="register-btn input-bg"
+    >
+      Guardar
+    </ion-button>
+  </form>
+  <ion-list class="transparent">
+    <ion-item button class="transparent" (click)="deleteAccount()">
+      <ion-icon slot="start" name="trash-outline"></ion-icon>
+      <ion-label class="txt"> Eliminar cuenta </ion-label>
+    </ion-item>
+
+    <ion-item button class="transparent" (click)="logout()">
+      <ion-icon slot="start" name="exit-outline"></ion-icon>
+      <ion-label class="txt"> Cerrar sesión </ion-label>
+    </ion-item>
+   
+  </ion-list>
+</ion-content>

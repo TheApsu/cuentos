@@ -1,15 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { UiService } from './services/ui.service';
+import { ApiResult } from './interfaces/interface';
 
-export interface ApiResult {
-  titulo: string,
-  descripcion: string,
-  enlace: string,
-  miniatura: string,
-}
 
 @Injectable({
   providedIn: 'root'
@@ -17,17 +11,31 @@ export interface ApiResult {
 export class ServicioService {
   
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private uiSv: UiService
+  ) { }
 
-  ConsultarCuentos(): Observable<ApiResult[]> {
-    return this.http.get<ApiResult[]>(
-      `${environment.baseUrl}/pdf`
-    );
+  consultarCuentos(uri?): Promise<ApiResult[]> {
+    return new Promise(async resolve => {
+      await this.uiSv.showLoading();
+      this.http.get<ApiResult[]>(
+        `${environment.baseUrl}/${uri}`
+      ).subscribe(async res => {
+        await this.uiSv.dismissLoading();
+        resolve(res);
+      })
+    })
   }
 
-  ConsultarVideos(): Observable<ApiResult[]> {
-    return this.http.get<ApiResult[]>(
-      `${environment.baseUrl}/videos`
-    );
+  ConsultarVideos(): Promise<ApiResult[]> {
+    return new Promise(async (resolve) => {
+      await this.uiSv.showLoading();
+      this.http.get<ApiResult[]>(`${environment.baseUrl}/videos`)
+        .subscribe(async res => {
+          await this.uiSv.dismissLoading();
+          resolve(res);
+        })
+    })
   }
 }

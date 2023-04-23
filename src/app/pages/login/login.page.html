@@ -1,0 +1,70 @@
+<ion-content class="default-bg login-container">
+  <div class="container-img">
+    <ion-img src="/assets/img/login-background.jpeg" alt=""></ion-img>
+  </div>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12" class="ion-text-center col-w">
+        <p>La niña que sueña con Jesús</p>
+        <h2>Ingresar</h2>
+      </ion-col>
+      <ion-col class="container-info">
+        <form [formGroup]="formGroup">
+          <ion-list class="transparent">
+            <ion-item 
+              lines="none" 
+              class="transparent ion-margin-bottom item-login default-font-color"
+              
+            >
+              <ion-label class="item-login_label" position="stacked">
+                Correo electrónico
+              </ion-label>
+              <ion-input 
+                formControlName="email" 
+                class="item-login_input input-bg" 
+                type="email"
+              ></ion-input>
+            </ion-item>
+            <ion-item lines="none" class="transparent ion-margin-bottom item-login">
+              <ion-label class="item-login_label" position="stacked">
+                Contraseña
+              </ion-label>
+              <ion-input 
+                class="item-login_input input-bg" 
+                type="password"
+                formControlName="password"
+              ></ion-input>
+            </ion-item>
+          </ion-list>
+        </form>
+        <ion-button 
+          class="login-btn input-bg"
+          expand="block" 
+          [disabled]="formGroup.invalid"
+          (click)="login()"
+        >
+          Entrar
+        </ion-button>
+        <ion-button 
+          class="secondary-btn"
+          expand="block" 
+          fill="clear"
+          (click)="goTo('/recovery')"
+        >
+          ¿Olvidaste tu contraseña?
+        </ion-button>
+        <ion-button 
+          class="secondary-btn"
+          expand="block" 
+          (click)="goTo('/registro')"
+          fill="clear"
+
+        >
+          Registrate
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="white-row">
+    </ion-row>
+  </ion-grid>
+</ion-content>
