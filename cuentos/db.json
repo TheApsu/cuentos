@@ -43,84 +43,98 @@
       "miniatura": "img"
     }
   ],
-   "videos": [
+  "videos": [
       {
-        "titulo": "alphabet"
+        "titulo": "alphabet",
+        "lang": "english"
       },
       {
         "titulo": "body-parts",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video2.html",
         "miniatura": "img"
       },
       {
         "titulo": "count-20",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video3.html",
         "miniatura": "img"
       },
       {
         "titulo": "country-flags",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video4.html",
         "miniatura": "img"
       },
       {
         "titulo": "days-week",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video5.html",
         "miniatura": "img"
       },
       {
         "titulo": "dinosaurs",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video6.html",
         "miniatura": "img"
       },
       {
         "titulo": "farm-animals",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video7.html",
         "miniatura": "img"
       },
       {
         "titulo": "fingers-family",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video8.html",
         "miniatura": "img"
       },
       {
         "titulo": "fruits",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video9.html",
         "miniatura": "img"
       },
       {
         "titulo": "month-year",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video10.html",
         "miniatura": "img"
       },
       {
         "titulo": "occupation",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video11.html",
         "miniatura": "img"
       },
       {
         "titulo": "solar-system",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video12.html",
         "miniatura": "img"
       },
       {
         "titulo": "vegetables",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video12.html",
         "miniatura": "img"
       },
       {
         "titulo": "zoo-animals",
+        "lang": "english",
         "descripcion": "",
         "enlace": "video12.html",
         "miniatura": "img"
