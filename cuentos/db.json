@@ -43,75 +43,84 @@
       "miniatura": "img"
     }
   ],
-  "videos": [
+   "videos": [
       {
-        "titulo": "Video 1",
-        "descripcion": "",
-        "enlace": "video1.html",
-        "miniatura": "img"
+        "titulo": "alphabet"
       },
       {
-        "titulo": "Video 2",
+        "titulo": "body-parts",
         "descripcion": "",
         "enlace": "video2.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 3",
+        "titulo": "count-20",
         "descripcion": "",
         "enlace": "video3.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 4",
+        "titulo": "country-flags",
         "descripcion": "",
         "enlace": "video4.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 5",
+        "titulo": "days-week",
         "descripcion": "",
         "enlace": "video5.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 6",
+        "titulo": "dinosaurs",
         "descripcion": "",
         "enlace": "video6.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 7",
+        "titulo": "farm-animals",
         "descripcion": "",
         "enlace": "video7.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 8",
+        "titulo": "fingers-family",
         "descripcion": "",
         "enlace": "video8.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 9",
+        "titulo": "fruits",
         "descripcion": "",
         "enlace": "video9.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 10",
+        "titulo": "month-year",
         "descripcion": "",
         "enlace": "video10.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 11",
+        "titulo": "occupation",
         "descripcion": "",
         "enlace": "video11.html",
         "miniatura": "img"
       },
       {
-        "titulo": "Video 12",
+        "titulo": "solar-system",
+        "descripcion": "",
+        "enlace": "video12.html",
+        "miniatura": "img"
+      },
+      {
+        "titulo": "vegetables",
+        "descripcion": "",
+        "enlace": "video12.html",
+        "miniatura": "img"
+      },
+      {
+        "titulo": "zoo-animals",
         "descripcion": "",
         "enlace": "video12.html",
         "miniatura": "img"
