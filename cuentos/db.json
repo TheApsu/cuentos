@@ -44,6 +44,7 @@
     }
   ],
   "videos": [
+    
       {
         "titulo": "alphabet",
         "lang": "english"
@@ -138,7 +139,76 @@
         "descripcion": "",
         "enlace": "video12.html",
         "miniatura": "img"
-      }
+      },
+    {
+      "titulo": "alphabet",
+      "lang": "spanish"
+    },
+    {
+      "titulo": "body-parts",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video2.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "count-20",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video3.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "country-flags",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video4.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "days-week",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video5.html",
+      "miniatura": "img"
+    },
+  
+    {
+      "titulo": "fingers-family",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video8.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "fruits",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video9.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "month-year",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video10.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "occupation",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video11.html",
+      "miniatura": "img"
+    },
+
+    {
+      "titulo": "vegetables",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video12.html",
+      "miniatura": "img"
+    }
   ],
   "juegos": [
       {
