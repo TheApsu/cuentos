@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpService } from './http.service';
-import { NavController } from '@ionic/angular';
+import { NavController, Platform } from '@ionic/angular';
 import { UiService } from './ui.service';
 import { PaypalSubscriptionComponent } from '../components/paypal-subscription/paypal-subscription.component';
 import { App } from '@capacitor/app';
@@ -10,6 +10,16 @@ import { App } from '@capacitor/app';
 })
 export class LoginService {
   private _user = undefined;
+  private _isVerified = false;
+
+  get isVerified(){
+    return this._isVerified;
+  }
+
+  set isVerified(value){
+    this._isVerified = value;
+  }
+
   get user(){
     return this._user
   }
@@ -22,6 +32,7 @@ export class LoginService {
     private httpSv: HttpService,
     private navCtrl: NavController,
     private uiSv: UiService,
+    private platform: Platform
   ) { 
     const user = JSON.parse( localStorage.getItem('user') );
     if(user){
@@ -45,12 +56,13 @@ export class LoginService {
   async verifyPaypal(showMsg){
     try{
       await this.httpSv.get('paypal/is-active');
+      this.isVerified = true;
       if(showMsg) await this.uiSv.showToast('Ya puedes disfrutar de nuestro contenido.');
       return true
     }catch(err){
       console.error(err);
       if(err.error.msg) {
-        const { role } = await this.uiSv.showAlert(err.error.msg, 'alert-modal');
+        const { role } = await this.uiSv.showAlert(err.error.msg, 'alert-modal', false, true);
         if(role === 'accept'){
           const { data } = await this.uiSv.showModal(PaypalSubscriptionComponent, 'paypal-component', { req: false }, false)
           if(data) {
@@ -58,8 +70,16 @@ export class LoginService {
             return true;
           };
         }
+      }else if(err.name === 'HttpErrorResponse' && !err.ok && err.statusText === 'Unknown Error'){
+        await this.uiSv.showAlert('Ha ocurrido un error, intenta mas tarde', 'alert-modal', false, false, false);
+        return;
       }
-      App.exitApp();
+
+      if(this.platform.is('capacitor')){
+        App.exitApp();
+      }else{
+        await this.verifyPaypal(false)
+      }
       return false
     }
   }

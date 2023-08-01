@@ -23,7 +23,7 @@ const routes: Routes = [
                 loadChildren: () => import('../videos/videos.module').then( m => m.VideosPageModule)
               },
               {
-                path: 'reproductor/:id/:titulo',
+                path: 'reproductor/:titulo',
                 loadChildren: () => import('../reproductor/reproductor.module').then( m => m.ReproductorPageModule)
               },
             ]

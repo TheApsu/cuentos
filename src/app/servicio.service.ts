@@ -16,7 +16,7 @@ export class ServicioService {
     private uiSv: UiService
   ) { }
 
-  consultarCuentos(uri?): Promise<ApiResult[]> {
+  consultarCuentos(uri?): Promise<any> {
     return new Promise(async resolve => {
       await this.uiSv.showLoading();
       this.http.get<ApiResult[]>(
@@ -28,10 +28,10 @@ export class ServicioService {
     })
   }
 
-  ConsultarVideos(): Promise<ApiResult[]> {
+  ConsultarVideos(): Promise<any> {
     return new Promise(async (resolve) => {
       await this.uiSv.showLoading();
-      this.http.get<ApiResult[]>(`${environment.baseUrl}/videos`)
+      this.http.get<ApiResult[]>(`${environment.baseUrl}/db.json`)
         .subscribe(async res => {
           await this.uiSv.dismissLoading();
           resolve(res);

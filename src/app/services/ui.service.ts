@@ -39,21 +39,33 @@ export class UiService {
     await toast.present();
   }
 
-  async showAlert(message, cssClass = 'alert-modal'){
-    const alert = await this.alertController.create({
-      header: 'Alerta',
-      message,
-      buttons: [
+  async showAlert(message, cssClass = 'alert-modal', backdropDismiss?, showCancel?, showAccept = true){
+    const buttons: any[] = [];
+
+    if(showAccept){
+      buttons.push(
+        {
+          text: 'Aceptar',
+          role: 'accept'
+        }
+      )
+    }
+
+    if(showCancel){
+      buttons.push(
         {
           text: 'Cancelar',
           role: 'cancel',
           cssClass: 'secondary',
-        }, {
-          text: 'Aceptar',
-          role: 'accept'
-        }
-      ],
-      cssClass
+        }, 
+      )
+    }
+    const alert = await this.alertController.create({
+      header: 'Alerta',
+      message,
+      buttons,
+      cssClass,
+      backdropDismiss,
     });
   
     await alert.present();

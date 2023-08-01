@@ -11,15 +11,23 @@ import { ServicioService } from 'src/app/servicio.service';
 })
 export class VideosPage implements OnInit {
 
-  public videoUri = '/assets/videos/'
-  public items = []
+  public videoUri = 'https://theapsu.github.io/videos/miniaturas/';
+  public spanish = [];
+  public lang = 'english';
+  public english = [];
 
   constructor(
     private servicio: ServicioService,
   ) { }
 
   async ngOnInit() {
-    this.items = await this.servicio.ConsultarVideos();
+    const data = (await this.servicio.ConsultarVideos())?.videos;
+    console.log('data :>> ', data);
+    this.english = data.filter(x => x.lang === 'english');
+    this.spanish = data.filter(x => x.lang === 'spanish');
   }
 
+  segmentChanged(){
+
+  }
 }

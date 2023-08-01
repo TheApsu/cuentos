@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-principal',
@@ -8,10 +9,13 @@ import { AlertController } from '@ionic/angular';
 })
 export class PrincipalPage implements OnInit {
   public video = '/assets/principal/video.jpeg';
-  public stories = '/assets/principal/stories.jpeg';
+  public stories = '/assets/img/login-background.jpeg';
   public games = '/assets/principal/games.jpeg';
 
-  constructor(private alertController: AlertController) {}
+  constructor(
+    private alertController: AlertController,
+    public loginSv: LoginService
+  ) {}
 
   ngOnInit() {
   }
@@ -27,5 +31,8 @@ export class PrincipalPage implements OnInit {
     await alert.present();
   }
   
+  openGames(){
+    window.open('https://arbolabc.com/');
+  }
 
 }

@@ -1,5 +1,5 @@
 import { Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
-import { DataDuration } from 'src/app/interfaces/interface';
+  import { DataDuration } from 'src/app/interfaces/interface';
 import { UiService } from 'src/app/services/ui.service';
 import { ServicioService } from 'src/app/servicio.service';
 import { environment } from 'src/environments/environment';
@@ -35,7 +35,7 @@ export class PdfComponent implements OnInit {
 
   constructor(
     private uiSv: UiService,
-    private servicio: ServicioService
+    private servicio: ServicioService,
   ) { }
 
   async ngOnInit() {
@@ -44,14 +44,21 @@ export class PdfComponent implements OnInit {
     await this.getData();
     this.audioUrl = `${environment.cuentosUrl}/${fixedTitle}.mp3`;
     this.pdfjsLib = window['pdfjs-dist/build/pdf'];
-    this.pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
+    this.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
     this.getPdf();
   }
 
   async getData(){
-    const data: any = await this.servicio.consultarCuentos('db');
+    const data: any = await this.servicio.consultarCuentos('db.json');
     const duration = data.audiosDuration;
-    this._durationData = duration.find(item => this.removeAccents(item.pdfName) === this.fixedTitle)?.data;
+    const audio: DataDuration[] = duration.find(item => this.removeAccents(item.pdfName) === this.fixedTitle)?.data;
+    const audioPage = audio.find(x => x.page === this.pageNum);
+    if(audioPage){
+      this.renderPage(this.pageNum);
+      //PARA PROBAR EL FINAL SOLAMENTE
+      // audioPage.init = audioPage.end - 5;
+    }
+    this._durationData = audio;
   }
 
   removeAccents(str: string){
@@ -72,7 +79,6 @@ export class PdfComponent implements OnInit {
 
   async checkTime(ev?){
     const audioEl = ev?.target || this.storieAudio;
-    console.log(`Pagina: ${this.pageNum} audioEl.currentTime :>> `, audioEl.currentTime);
     if(this._durationPage && audioEl.currentTime > this._durationPage.end){
       audioEl.pause();
     }
@@ -96,9 +102,8 @@ export class PdfComponent implements OnInit {
       // Using promise to fetch the page
       const canvas = this.theCanvas.nativeElement;
       await this.uiSv.showLoading('Cargando PDF.');
-      this.pdfDoc.getPage(num).then((page) => {
+      this.pdfDoc?.getPage(num).then((page) => {
         const viewport = page.getViewport({scale: 1});
-        console.log(viewport);
         canvas.height = viewport.height;
         canvas.width = viewport.width;
     
@@ -125,6 +130,7 @@ export class PdfComponent implements OnInit {
               
               await this.uiSv.showLoading('Cargando Audio.');
               this.storieAudio = new Audio(this.audioUrl);
+              // this.storieAudio.playbackRate = 2.0;
               this.storieAudio.addEventListener('canplaythrough', async () => {
                 this.storieAudio.addEventListener('timeupdate', async () => {
                   // console.log('object :>> ', object);

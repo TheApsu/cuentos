@@ -1,13 +1,10 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import {
-  IPayPalConfig,
-  NgxPaypalComponent,
-  ICreateSubscriptionRequest
-} from "ngx-paypal";
+import { NgxPaypalComponent } from "ngx-paypal";
 import { HttpService } from 'src/app/services/http.service';
 import { ModalController } from '@ionic/angular';
 import { UiService } from 'src/app/services/ui.service';
+import { LoginService } from 'src/app/services/login.service';
 
 declare var paypal;
 
@@ -26,7 +23,9 @@ export class PaypalSubscriptionComponent implements OnInit {
   constructor(
     private httpSv: HttpService,
     private modalController: ModalController,
-    private uiSv: UiService
+    private uiSv: UiService,
+    private loginSv: LoginService,
+
   ) { }
 
   async ngOnInit() {
@@ -51,27 +50,42 @@ export class PaypalSubscriptionComponent implements OnInit {
             layout: 'vertical',
             label: 'subscribe'
         },
-        createSubscription: function(data, actions) {
-          console.log('createSubscription data :>> ', data);
-          console.log('createSubscription actions :>> ', actions);
+        createSubscription: (data, actions) => {
 
           return actions.subscription.create({
             /* Creates the subscription */
-            plan_id: planId
+            plan_id: planId,
+            // custom_id: this.loginSv.user.id
           });
         },
         onApprove: async (data, actions) => {
-          const headers = {
-            'Authorization': `bearer ${environment.accessToken}`,
-            'Content-Type': 'application/json'
+          try{
+            const accesToken = this.b64EncodeUnicode();
+            console.log('accesToken :>> ', accesToken);
+            const headers = {
+              'Authorization': `basic ${accesToken}`,
+              'Content-Type': 'application/json'
+            }
+            const res: any = await this.httpSv.getExternal(`https://api-m.sandbox.paypal.com/v1/billing/subscriptions/${data.subscriptionID}`, headers);
+            console.log('billing :>> ', res);
+            await this.httpSv.post('paypal/store-payment', { payer_id: res.subscriber.payer_id });
+            this.modalController.dismiss(true);
+          }catch(err){
+            console.error(err);
+            
           }
-          const res: any = await this.httpSv.getExternal(`https://api-m.sandbox.paypal.com/v1/billing/subscriptions/${data.subscriptionID}`, headers);
-          const apiRes = await this.httpSv.post('paypal/store-payment', { payer_id: res.subscriber.payer_id });
-          this.modalController.dismiss(true);
         }
       }).render(`#${this.idPaypal}`);
     })
   }
+
+  b64EncodeUnicode() {
+    // first we use encodeURIComponent to get percent-encoded UTF-8,
+    // then we convert the percent encodings into raw bytes which
+    // can be fed into btoa.
+    const str = `${environment.paypalKey}:${environment.paypalSecretKey}`
+    return btoa(str);
+}
 
   async close(){
     this.modalController.dismiss(false);

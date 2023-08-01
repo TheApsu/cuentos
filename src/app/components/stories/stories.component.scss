@@ -9,8 +9,13 @@
     border-radius: 5px;
     overflow: hidden;
   }
-  .card-stories_title{
-    color: #fff;
-    font-size: 1.1rem;
+  .storie-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card-stories_title{
+      color: #fff;
+      font-size: 1.1rem;
+    }
   }
 }

@@ -8,9 +8,8 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./reproductor.page.scss'],
 })
 export class ReproductorPage implements OnInit {
-  public titulo = "Titulo";
-  public id = this.route.snapshot.paramMap.get('id');
-  public url = 'https://jose-mena.github.io/miscuentos/proyecto/';
+  public title = "Titulo";
+  public url = '';
 
   constructor(
     private route: ActivatedRoute, 
@@ -18,7 +17,9 @@ export class ReproductorPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.titulo = this.route.snapshot.paramMap.get('titulo');
+    const lang = this.title = this.route.snapshot.queryParamMap.get('lang');
+    this.url = `https://theapsu.github.io/videos/${lang}`;
+    this.title = this.route.snapshot.paramMap.get('titulo');
   }
 
 

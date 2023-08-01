@@ -1,0 +1,18 @@
+{
+	"appId": "com.patty.demo",
+	"appName": "Patty",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 3000,
+			"launchAutoHide": true,
+			"launchFadeOutDuration": 3000,
+			"backgroundColor": "#FDAAB8",
+			"androidSplashResourceName": "splash",
+			"showSpinner": false,
+			"splashFullScreen": true,
+			"splashImmersive": true
+		}
+	}
+}

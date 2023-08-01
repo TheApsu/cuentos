@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
-import { LoadingController } from '@ionic/angular';
 import { ServicioService } from 'src/app/servicio.service';
 
 @Component({
@@ -17,9 +15,8 @@ export class CuentosPage implements OnInit {
   ) { }
 
   async ngOnInit() {
-    this.items = await this.servicio.consultarCuentos('pdf');
+    this.items = (await this.servicio.consultarCuentos('db.json')).pdf;
     console.log(this.items);
-    
   }
 
 }
