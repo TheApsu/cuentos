@@ -27,83 +27,188 @@
     {
       "titulo": "Lazaro",
       "descripcion": "Patty, celebraba el cumpleaños de su mascota King. Sus amigos Patón, Jane y Vicky, habían traído dulces y galletas para compartir...",
-      "enlace": "pdf5.html",
+      "enlace": "pdf6.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "Zaqueo",
+      "descripcion": "Patty, celebraba el cumpleaños de su mascota King. Sus amigos Patón, Jane y Vicky, habían traído dulces y galletas para compartir...",
+      "enlace": "pdf7.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "La reina esther",
+      "descripcion": "Patty, celebraba el cumpleaños de su mascota King. Sus amigos Patón, Jane y Vicky, habían traído dulces y galletas para compartir...",
+      "enlace": "pdf8.html",
       "miniatura": "img"
     }
   ],
   "videos": [
-      {
-        "titulo": "Video 1",
-        "descripcion": "",
-        "enlace": "video1.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 2",
-        "descripcion": "",
-        "enlace": "video2.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 3",
-        "descripcion": "",
-        "enlace": "video3.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 4",
-        "descripcion": "",
-        "enlace": "video4.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 5",
-        "descripcion": "",
-        "enlace": "video5.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 6",
-        "descripcion": "",
-        "enlace": "video6.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 7",
-        "descripcion": "",
-        "enlace": "video7.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 8",
-        "descripcion": "",
-        "enlace": "video8.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 9",
-        "descripcion": "",
-        "enlace": "video9.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 10",
-        "descripcion": "",
-        "enlace": "video10.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 11",
-        "descripcion": "",
-        "enlace": "video11.html",
-        "miniatura": "img"
-      },
-      {
-        "titulo": "Video 12",
-        "descripcion": "",
-        "enlace": "video12.html",
-        "miniatura": "img"
-      }
+    {
+      "titulo": "alphabet",
+      "lang": "english"
+    },
+    {
+      "titulo": "body-parts",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video2.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "count-20",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video3.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "country-flags",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video4.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "days-week",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video5.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "dinosaurs",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video6.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "farm-animals",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video7.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "fingers-family",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video8.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "fruits",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video9.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "month-year",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video10.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "occupation",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video11.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "solar-system",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video12.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "vegetables",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video12.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "zoo-animals",
+      "lang": "english",
+      "descripcion": "",
+      "enlace": "video12.html",
+      "miniatura": "img"
+    },
+
+    {
+      "titulo": "alphabet",
+      "lang": "spanish"
+    },
+    {
+      "titulo": "body-parts",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video2.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "count-20",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video3.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "country-flags",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video4.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "days-week",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video5.html",
+      "miniatura": "img"
+    },
+  
+    {
+      "titulo": "fingers-family",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video8.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "fruits",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video9.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "month-year",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video10.html",
+      "miniatura": "img"
+    },
+    {
+      "titulo": "occupation",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video11.html",
+      "miniatura": "img"
+    },
+
+    {
+      "titulo": "vegetables",
+      "lang": "spanish",
+      "descripcion": "",
+      "enlace": "video12.html",
+      "miniatura": "img"
+    }
   ],
   "juegos": [
       {
@@ -296,6 +401,116 @@
             "page": 11,
             "init":  157.8,
             "end": 232
+          }
+        ]
+      },
+      {
+        "pdfName": "Lazaro",
+        "data": [
+          {
+            "page": 4,
+            "init": 0,
+            "end": 48.8
+          },
+          {
+            "page": 5,
+            "init": 49.3,
+            "end": 95.55
+          },
+          {
+            "page": 8,
+            "init": 95.55,
+            "end": 130.7
+          },
+          {
+            "page": 9,
+            "init": 131.1,
+            "end": 168.8
+          },
+          {
+            "page": 12,
+            "init": 169.5,
+            "end": 207.2
+          },
+          {
+            "page": 13,
+            "init": 207.3,
+            "end": 245.184
+          }
+        ]
+      },
+      {
+        "pdfName": "Zaqueo",
+        "data": [
+          {
+            "page": 2,
+            "init": 0,
+            "end": 0.722195
+          },
+          {
+            "page": 3,
+            "init": 0.722195,
+            "end": 55.4
+          },
+          {
+            "page": 6,
+            "init": 60.2,
+            "end": 107
+          },
+          {
+            "page": 7,
+            "init": 109,
+            "end": 155.628933
+          },
+          {
+            "page": 10,
+            "init": 156,
+            "end": 218.463051
+          }
+        ]
+      },
+      {
+        "pdfName": "La reina esther",
+        "data": [
+          {
+            "page": 2,
+            "init": 0,
+            "end": 49.87335
+          },
+          {
+            "page": 3,
+            "init": 48,
+            "end": 108
+          },
+          {
+            "page": 4,
+            "init": 103.7,
+            "end": 123.4
+          },
+          {
+            "page": 5,
+            "init": 121.9,
+            "end": 171.5
+          },
+          {
+            "page": 7,
+            "init": 165.6,
+            "end": 194.5
+          },
+          {
+            "page": 8,
+            "init": 191.2,
+            "end": 197
+          },
+          {
+            "page": 10,
+            "init": 196.7,
+            "end": 253
+          },
+          {
+            "page": 11,
+            "init": 250.2,
+            "end": 324.857817
           }
         ]
       }
