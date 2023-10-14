@@ -1,17 +1,21 @@
 <div class="pager">
-  <ion-buttons>
+  <!-- <ion-buttons>
     <ion-button (click)="getData()">
       <ion-icon slot="icon-only" name="refresh-outline"></ion-icon>
     </ion-button>
+  </ion-buttons> -->
+  <ion-buttons>
+    <ion-button (click)="playOrPause()">
+      <ion-icon slot="icon-only" [name]="controlAudioIcon"></ion-icon>
+    </ion-button>
   </ion-buttons>
-  <ion-buttons >
+
+  <ion-buttons>
     <ion-button (click)="nextPage(false)">
       <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
     </ion-button>
   </ion-buttons>
-  <ion-label text-wrap>
-    {{ pageNum }} / {{ totalPages }}
-  </ion-label>
+  <ion-label text-wrap> {{ pageNum }} / {{ totalPages }} </ion-label>
   <ion-buttons>
     <ion-button (click)="nextPage(true)">
       <ion-icon slot="icon-only" name="chevron-forward"></ion-icon>
@@ -21,6 +25,9 @@
 <div class="canvas">
   <canvas #theCanvas></canvas>
 </div>
+<!-- <div id="play-pause">
+ 
+</div> -->
 
 <!-- <audio
   *ngIf="audioUrl"

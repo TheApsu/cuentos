@@ -7,17 +7,6 @@
     </ion-button>
   </ion-buttons>
 
-  <h2 class="title"> {{ titulo }} </h2>
-  <app-pdf
-    [url]="url | cuentos:titulo"
-    [titulo]="titulo"
-  ></app-pdf>
-  <!-- <embed [src]="url | domSanitizer:titulo" type="application/pdf" width="100%" height="100%" /> -->
-  <!-- <object [src]="url | domSanitizer:titulo" height="100%" width="100%"></object> -->
-  
-  <!-- <iframe 
-    [src]="url | domSanitizer:id"  
-    style="width:100%;height:100%" 
-    scrolling="yes" 
-  ></iframe> -->
+  <h2 class="title">{{ titulo }}</h2>
+  <app-pdf #appPdf [url]="url | cuentos:titulo" [titulo]="titulo"></app-pdf>
 </ion-content>

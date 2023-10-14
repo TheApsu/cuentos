@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://theapsu.github.io/cuentos/cuentos',
-  // baseUrl: '/assets/db/db.json',
+  // baseUrl: 'https://theapsu.github.io/cuentos',
+  baseUrl: '/assets/db',
 
-  cuentosUrl: 'https://theapsu.github.io/cuentos/cuentos',
+  cuentosUrl: 'https://theapsu.github.io/cuentos',
 
   // apiUrl: 'http://localhost:3000',
   apiUrl: 'https://nodejs-railway-server.onrender.com',

@@ -1,9 +1,10 @@
 export const environment = {
   production: true,
   // baseUrl: 'https://my-json-server.typicode.com/theapsu/cuentos',
-  baseUrl: 'https://theapsu.github.io/cuentos/cuentos',
+  // baseUrl: 'https://theapsu.github.io/cuentos',
+  baseUrl: '/assets/db',
   // baseUrl: '/assets/db/db.json',
-  cuentosUrl: 'https://theapsu.github.io/cuentos/cuentos',
+  cuentosUrl: 'https://theapsu.github.io/cuentos',
   // apiUrl: 'http://localhost:3000'
   apiUrl: 'https://nodejs-railway-server.onrender.com',
 

@@ -223,57 +223,57 @@
         "pdfName": "Jesús es el camino",
         "data": [
           {
-            "page": 2,
+            "page": 1,
             "init": 0,
             "end": 2.579983
           },
           {
-            "page": 3,
+            "page": 2,
             "init": 2.7,
             "end": 28.586497
           },
           {
-            "page": 5,
+            "page": 7,
             "init": 29.287611,
             "end": 50
           },
           {
-            "page": 6,
+            "page": 5,
             "init": 49.764458,
             "end": 59.4
           },
           {
-            "page": 8,
+            "page": 6,
             "init": 58,
             "end": 69.5
           },
           {
-            "page": 9,
+            "page": 8,
             "init": 71.247292,
             "end": 99.931887
           },
           {
-            "page": 11,
+            "page": 10,
             "init": 96.7,
             "end": 122.5
           },
           {
-            "page": 12,
+            "page": 11,
             "init": 125.5,
             "end": 140.916632
           },
           {
-            "page": 14,
+            "page": 13,
             "init": 142,
             "end": 172.131558
           },
           {
-            "page": 15,
+            "page": 14,
             "init": 171.5,
             "end": 203.428393
           },
           {
-            "page": 17,
+            "page": 16,
             "init": 199.5,
             "end": 261.281832
           }  
