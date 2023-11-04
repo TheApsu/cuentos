@@ -13,7 +13,7 @@ export const environment = {
   paypalSecretKey:
     'EJDfqoMh3sBxS0bkYSC2nF7uNAkVP26ZO32nU5ApBzWTOOHosfBcC6R2j9mgmBaHxU8IMDzSg949eT9Q',
 
-  paypalPlan: 'P-4BC78204AU2233620MRCEPPY',
+  paypalPlan: 'P-6JU57210X6245764KMU2BNAA',
   accessToken:
     'A21AAPQndQzsHHaSsslKzzTTfGGEr2aguZLfHtp3XVKqSnskpKm0-RRWCmG2X1O_9GxVtyJlz4a2P9geNB5KJPO46Q60JJ8_Q',
 };

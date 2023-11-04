@@ -104,7 +104,7 @@ export class PdfComponent implements OnInit {
   }
 
   async getPdf() {
-    // await this.uiSv.showLoading();
+    await this.uiSv.showLoading();
     this._ctx = this.theCanvas.nativeElement.getContext('2d');
     this.pdfjsLib.getDocument(this.url).promise.then(async (pdfDoc_: any) => {
       this.pdfDoc = pdfDoc_;

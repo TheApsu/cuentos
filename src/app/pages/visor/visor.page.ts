@@ -23,7 +23,7 @@ export class VisorPage implements OnInit {
   }
 
   async back() {
-    this.appPdf.storyAudio.pause();
+    this.appPdf.storyAudio?.pause();
     await this.navCtrl.navigateBack('tab/principal/cuentos');
   }
 }
