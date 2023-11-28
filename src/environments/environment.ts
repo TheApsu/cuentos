@@ -9,7 +9,7 @@ export const environment = {
 
   cuentosUrl: 'https://theapsu.github.io/cuentos',
 
-  // apiUrl: 'http://localhost:3000',
+  // apiUrl: 'http://172.16.0.5:3000',
   apiUrl: 'https://nodejs-railway-server.onrender.com',
 
   paypalKey:

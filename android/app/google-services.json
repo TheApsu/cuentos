@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1048850765481",
+    "project_id": "cuentos-patty-9a367",
+    "storage_bucket": "cuentos-patty-9a367.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048850765481:android:3c09fd6fa7d5d2aed77bb8",
+        "android_client_info": {
+          "package_name": "com.patty.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048850765481-see13lol98ku33sne7ndeom44n9517hf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.patty.demo",
+            "certificate_hash": "e38e6020e22f8494ffd419ba7ca6e8bbee440ce4"
+          }
+        },
+        {
+          "client_id": "1048850765481-v7c5se45kikvftoj6ffdmgt5c3ge292s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADi7Acm--ODWHTU6wUnR6FwelJ1oN_GmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048850765481-v7c5se45kikvftoj6ffdmgt5c3ge292s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

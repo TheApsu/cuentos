@@ -20,18 +20,23 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.formGroup = this.fb.group({
-      email: ['', [Validators.required, Validators.pattern(/^[\w\.g]+@+[\w]+[.]+[\D]{2,10}$/)]],
-      password: ['', [Validators.required, Validators.minLength(5)]]
-    })
+      email: [
+        '',
+        [
+          Validators.required,
+          Validators.pattern(/^[\w\.g]+@+[\w]+[.]+[\D]{2,10}$/),
+        ],
+      ],
+      password: ['', [Validators.required, Validators.minLength(5)]],
+    });
   }
 
-  async login() {
-    this.loginSv.auth(this.formGroup.value);
+  async login(signInWithGoogle = false) {
+    await this.loginSv.auth(this.formGroup.value, signInWithGoogle);
     // await this.goTo('tab/principal');
   }
 
-  async goTo(href){
+  async goTo(href) {
     this.navCtrl.navigateForward(href);
   }
-
 }

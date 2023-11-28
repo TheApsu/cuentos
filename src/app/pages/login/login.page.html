@@ -10,61 +10,68 @@
       </ion-col>
       <ion-col class="container-info">
         <form [formGroup]="formGroup">
+          <div id="sign-in-with-google-btn" (click)="login(true)">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-avatar>
+              <img src="assets/icon/google-icon.png" />
+            </ion-avatar>
+            <p>Continuar con google</p>
+          </div>
           <ion-list class="transparent">
-            <ion-item 
-              lines="none" 
+            <ion-item
+              lines="none"
               class="transparent ion-margin-bottom item-login default-font-color"
-              
             >
               <ion-label class="item-login_label" position="stacked">
                 Correo electrónico
               </ion-label>
-              <ion-input 
-                formControlName="email" 
-                class="item-login_input input-bg" 
+              <ion-input
+                formControlName="email"
+                class="item-login_input input-bg"
                 type="email"
               ></ion-input>
             </ion-item>
-            <ion-item lines="none" class="transparent ion-margin-bottom item-login">
+            <ion-item
+              lines="none"
+              class="transparent ion-margin-bottom item-login"
+            >
               <ion-label class="item-login_label" position="stacked">
                 Contraseña
               </ion-label>
-              <ion-input 
-                class="item-login_input input-bg" 
+              <ion-input
+                class="item-login_input input-bg"
                 type="password"
                 formControlName="password"
               ></ion-input>
             </ion-item>
           </ion-list>
         </form>
-        <ion-button 
+        <ion-button
           class="login-btn input-bg"
-          expand="block" 
+          expand="block"
           [disabled]="formGroup.invalid"
           (click)="login()"
         >
           Entrar
         </ion-button>
-        <ion-button 
+        <ion-button
           class="secondary-btn"
-          expand="block" 
+          expand="block"
           fill="clear"
           (click)="goTo('/recovery')"
         >
           ¿Olvidaste tu contraseña?
         </ion-button>
-        <ion-button 
+        <ion-button
           class="secondary-btn"
-          expand="block" 
+          expand="block"
           (click)="goTo('/registro')"
           fill="clear"
-
         >
           Registrate
         </ion-button>
       </ion-col>
     </ion-row>
-    <ion-row class="white-row">
-    </ion-row>
+    <ion-row class="white-row"> </ion-row>
   </ion-grid>
 </ion-content>

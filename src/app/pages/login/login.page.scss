@@ -1,56 +1,56 @@
-.login-container{
-  .container-img{
+.login-container {
+  .container-img {
     display: flex;
   }
-  .col-w{
-    padding-top: .5rem;
+  .col-w {
+    padding-top: 0.5rem;
     color: #fff;
-    p, h2{
+    p,
+    h2 {
       font-weight: bold;
       margin: 0;
     }
-    h2{
+    h2 {
       font-size: 2rem;
     }
-    p{
+    p {
       font-size: 1rem;
       width: 70%;
       margin: auto;
     }
   }
-  
-  .container-info{
+
+  .container-info {
     padding: 0.5rem 1.5rem;
-    .login-btn, .secondary-btn{
+    .login-btn,
+    .secondary-btn {
       width: 85%;
       margin: auto;
       text-transform: none;
       --color: #fff;
       // -webkit-text-stroke: 0;
     }
-  
-    .login-btn{
+
+    .login-btn {
       font-size: 1rem;
       --box-shadow: none;
-      --border-radius: .5rem;
+      --border-radius: 0.5rem;
       --padding-top: 1.5rem;
       --padding-bottom: 1.5rem;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       margin-bottom: 1rem;
     }
-    
-    .secondary-btn{
+
+    .secondary-btn {
       text-decoration: underline;
     }
-    
-   
   }
-  .white-row{
+  .white-row {
     width: 100%;
     height: 2rem;
     position: relative;
     overflow: hidden;
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       width: 100%;
@@ -60,4 +60,21 @@
       transform: translateY(0.6rem);
     }
   }
+}
+
+#sign-in-with-google-btn {
+  ion-avatar {
+    width: 32px;
+    height: 32px;
+  }
+  display: flex;
+  border: 1px solid #558aed;
+  border-radius: 2rem;
+  padding: 0.1rem;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transform: scale(0.9);
+  margin-top: 1rem;
 }
